@@ -1,0 +1,18 @@
+{
+  "name": "music-service",
+  "version": "1.0.0",
+  "description": "音乐服务API，支持歌词、歌单和音频文件获取",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

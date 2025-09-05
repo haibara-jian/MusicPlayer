@@ -1,0 +1,20 @@
+{
+    "code": 200,
+    "playlist": {
+        "id": 14189826720,
+        "tracks": [
+            {
+                "name": "Just Be Friends",
+		"id": 1404206986,
+                "al": {
+                    "id": 73927024,
+                    "name": "hanser X 小缘",
+                    "picUrl": "https://api.huiyuan.cn.eu.org/public/images/1.jpg",
+                    "tns": [],
+                    "pic_str": "109951163606870393",
+                    "pic": 109951163606870393
+                }
+            }
+        ]
+    }
+}
