@@ -4,9 +4,13 @@
 
 基于deepseek ai生成并修改达到可用状态，此项目用于匹配 https://gitee.com/xfwlclub/xf-MusicPlayer 项目 api。
 
-需要修改https://gitee.com/xfwlclub/xf-MusicPlayer/blob/master/xf-MusicPlayer/js/xf-MusicPlayer.min.js
+完整版，需要修改所有的music.huiyuan.cn.eu.org为你的域名
 
-把api.xfyun.club修改为你的域名
+参考命令
+
+find ./ -type f |xargs grep "music.huiyuan.cn.eu.org"
+
+查询结果
 
 参考nginx 转发
 ```
