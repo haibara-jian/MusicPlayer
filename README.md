@@ -1,3 +1,11 @@
+
+基于deepseek ai生成并修改达到可用状态，此项目用于匹配 https://gitee.com/xfwlclub/xf-MusicPlayer 项目 api。
+
+口令为：
+
+帮忙弄一个音乐类型的项目，基于Node.js + Express 扩展，功能包含读取多个json文件实现歌词获取 /musicAll/?lyric=1404206986 和歌单获取/musicAll/?playlistId=14189826720 ，还能支持获取歌曲MP3文件和专辑图JPG等静态文件获取，支持通过/musicAll/?songId=1404206986&mp3Url=mp3响应302location到/public/music/1404206986.mp3
+
+
 # Node.js 音乐服务项目
 
 我将为您设计一个基于Node.js + Express的音乐服务项目，支持歌词获取、歌单管理、MP3文件服务和专辑图像服务。
