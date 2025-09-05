@@ -10,7 +10,7 @@
 
 find ./ -type f |xargs grep "music.huiyuan.cn.eu.org"
 
-查询结果
+查询结果请查看result.txt
 
 参考nginx 转发
 ```
