@@ -6,13 +6,28 @@
             {
                 "name": "Just Be Friends",
 		"id": 1404206986,
+		"duration": "369",
                 "al": {
-                    "id": 73927024,
                     "name": "hanser X 小缘",
-                    "picUrl": "https://api.huiyuan.cn.eu.org/public/images/1.jpg",
-                    "tns": [],
-                    "pic_str": "109951163606870393",
-                    "pic": 109951163606870393
+                    "picUrl": "https://music.huiyuan.cn.eu.org/img/1.jpg"
+                }
+            },
+	    {
+                "name": "群青",
+                "id": 1881312611,
+                "duration": "255",
+                "al": {
+                    "name": "hanser X 小缘",
+                    "picUrl": "https://music.huiyuan.cn.eu.org/img/1.jpg"
+                }
+            },
+            {
+                "name": "不如逃吧",
+                "id": 2098487491,
+		"dt": "262000",
+                "al": {
+                    "name": "呜米 X 咩栗",
+                    "picUrl": "https://music.huiyuan.cn.eu.org/img/2.jpg"
                 }
             }
         ]
