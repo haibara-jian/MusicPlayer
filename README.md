@@ -2,10 +2,11 @@
 基于deepseek ai生成并修改达到可用状态，此项目用于匹配 https://gitee.com/xfwlclub/xf-MusicPlayer 项目 api。
 
 需要修改https://gitee.com/xfwlclub/xf-MusicPlayer/blob/master/xf-MusicPlayer/js/xf-MusicPlayer.min.js
+
 把api.xfyun.club修改为你的域名
 
 参考nginx 转发
-
+```
 server {
     listen 80;
     listen [::]:80;
@@ -23,7 +24,7 @@ server {
 
     }
 }
-
+```
 
 
 口令为：
