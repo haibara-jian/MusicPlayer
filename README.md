@@ -1,6 +1,31 @@
 
 基于deepseek ai生成并修改达到可用状态，此项目用于匹配 https://gitee.com/xfwlclub/xf-MusicPlayer 项目 api。
 
+需要修改https://gitee.com/xfwlclub/xf-MusicPlayer/blob/master/xf-MusicPlayer/js/xf-MusicPlayer.min.js
+把api.xfyun.club修改为你的域名
+
+参考nginx 转发
+
+server {
+    listen 80;
+    listen [::]:80;
+    listen 443 ssl ;
+    server_name api.xxx.com;
+    ssl_certificate /etc/nginx/cert/xxx.com.pem;
+    ssl_certificate_key /etc/nginx/cert/xxx.com.key;
+
+    location / {
+                    proxy_pass              http://127.0.0.1:3000;
+                    proxy_set_header        Host            $host;
+                    proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+                    proxy_set_header        X-Forwarded-For $remote_addr;
+                    add_header              X-Frame-Options SAMEORIGIN;
+
+    }
+}
+
+
+
 口令为：
 
 帮忙弄一个音乐类型的项目，基于Node.js + Express 扩展，功能包含读取多个json文件实现歌词获取 /musicAll/?lyric=1404206986 和歌单获取/musicAll/?playlistId=14189826720 ，还能支持获取歌曲MP3文件和专辑图JPG等静态文件获取，支持通过/musicAll/?songId=1404206986&mp3Url=mp3响应302location到/public/music/1404206986.mp3
