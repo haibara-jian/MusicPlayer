@@ -1,4 +1,7 @@
 
+
+
+
 基于deepseek ai生成并修改达到可用状态，此项目用于匹配 https://gitee.com/xfwlclub/xf-MusicPlayer 项目 api。
 
 需要修改https://gitee.com/xfwlclub/xf-MusicPlayer/blob/master/xf-MusicPlayer/js/xf-MusicPlayer.min.js
@@ -16,7 +19,7 @@ server {
     ssl_certificate_key /etc/nginx/cert/xxx.com.key;
 
     location / {
-                    proxy_pass              http://127.0.0.1:3000;
+                    proxy_pass              http://127.0.0.1:3003;
                     proxy_set_header        Host            $host;
                     proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
                     proxy_set_header        X-Forwarded-For $remote_addr;
@@ -219,8 +222,27 @@ mkdir -p data/lyrics data/playlists public/music public/images
 3. 添加示例数据文件（如上所示）
 
 4. 启动服务：
-```bash
-npm start
+
+   
+安装pm2来进行服务托管
+
+参考命令
+```
+# 全局安装 PM2
+npm install -g pm2
+
+# 使用 PM2 启动应用
+pm2 start main.js --name "music-app"
+
+# 设置开机自启动
+pm2 startup
+pm2 save
+
+# 查看运行状态
+pm2 status
+
+# 查看日志
+pm2 logs music-app
 ```
 
 ### API使用示例
