@@ -32,7 +32,7 @@ router.get('/', async (req, res) => {
     }
     else if (songId && mp3Url === 'mp3') {
       // 重定向到MP3文件
-      const mp3Path = `/public/music/${songId}.mp3`;
+      const mp3Path = `/musicMp3/${songId}.mp3`;
       res.redirect(302, mp3Path);
     }
     else {
